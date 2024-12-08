@@ -1,5 +1,5 @@
 ---
-
+const pageTitle = "Blogging cats";
 ---
 
 <html lang="en">
@@ -8,12 +8,12 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Blogging Bluecats</title>
+		<title>{pageTitle}</title>
 	</head>
 	<body>
         <a href="/">Home</a>
         <a href="/about/">About</a>
-        <a href="/blog/">Blogging Bluecats</a>
+        <a href="/blog/">{pageTitle}</a>
 		<h1>And the cats speak...</h1>
         <h2>just listen</h2>
 
