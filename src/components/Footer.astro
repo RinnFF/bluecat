@@ -1,11 +1,15 @@
 ---
-const platform = "github";
-const username = "withastro";
-const fb = "facebook";
-const fbuser = "hellocatdigital";
+import Social from './Social.astro';
 ---
-
+<style>
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+</style>
 <footer>
-  <p>Learn more about my projects on <a href={`https://www.${platform}.com/${username}`}>{platform}</a>!</p>
-  <p>Find me on <a href={`https://www.${fb}.com/${fbuser}`}>{fb}</a>!</p>
+  <Social platform="twitter" username="astrodotbuild" />
+  <Social platform="github" username="withastro" />
+  <Social platform="youtube" username="astrodotbuild" />
 </footer>
