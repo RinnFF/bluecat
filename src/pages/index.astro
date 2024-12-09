@@ -1,5 +1,8 @@
 ---
-const pageTitle = "Bluecats";
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+const pageTitle = "Bluecat home";
 ---
 
 <html lang="en">
@@ -11,10 +14,9 @@ const pageTitle = "Bluecats";
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-		<a href="/">{pageTitle}</a>
-		<a href="/about/">About</a>
-		<a href="/blog/">Blogging Bluecats</a>
-		<h1>Bluecat</h1>
+		<Navigation />
+		<h1>{pageTitle}</h1>
 		<h2>meow</h2>
+		<Footer />
 	</body>
 </html>
